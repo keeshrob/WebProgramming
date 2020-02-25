@@ -1,0 +1,76 @@
+/* General Styles */
+body, html {margin:initial;padding:initial;line-height:1.5em;color:white;}
+body {background:#0e0e0e; font-family: 'Lato', sans-serif;}
+a {text-decoration:none;color:ivory;}
+a:hover {color:gray;}
+button, a.button {text-transform:uppercase;transition-duration: 0.4s;display:inline-block;background:#0039a6;outline:1px solid #0039a6;color:white;border:none;padding:15px 30px;margin-top:5px;margin-bottom:5px;}
+button:hover, a.button:hover, a.button.inverse {cursor:pointer;background:inherit;outline:1px solid #0039a6; }
+
+
+/* Menu */
+#menu {background:#2a2a2b;box-shadow: 0px 1px 7px -4px #000000;padding:0vw 3vw;position:fixed;width:94vw;z-index:2;}
+#menu ul {float:right;}
+#menu li {list-style:none;display:inline-block;padding:15px;}
+#menu h2 {float:left;line-height:1.1em;font-weight:300;font-size:1.85em;letter-spacing:2px;}
+#menu h2 strong {font-weight: 500;}
+
+/* Homepage */
+div#hero_wrapper {padding:10vh 0vw;clear:right;background: url('panther_logo.svg') #181818;background-repeat:no-repeat;background-size: 96vh;background-position:-42vh 20vh;height:100vh;}
+
+div#info_box {padding-top:25vh;width:75%;display:block;float:right;text-align:center;}
+div#info_box h1 {font-size:4em;font-weight:300;letter-spacing:3px;color:white;text-shadow: 0px 1px 3px #111111;}
+div#info_box h2 {letter-spacing:5px;color:#d8d8da}
+
+/* Grouped Box */
+.grouped_box {margin-bottom:10px;}
+.grouped_box p {line-height:1.75em;}
+.grouped_box, .action_section {display:flex;flex-direction:row}
+.grouped_box.reverse_column {flex-direction:row-reverse;}
+.grouped_box div h2, .action_section h2 {font-weight:300;}
+.grouped_box .photo {width:50vw;}
+.grouped_box .photo img {max-width:100%;}
+.grouped_box div:last-child {width:40vw;padding:2vw 5vw;}
+
+/* Home - Volunteer & Dates */
+div.action_section {background:#202020;}
+div.action_section div {width:27vw;padding:2vw 3vw;border-right: 1px dotted #32343a;}
+div.action_section div#volunteer img {width:100%;border-radius:3px;margin-bottom:7px;}
+div.action_section div:last-child {border-right:initial;}
+div.action_section li {list-style-type:square;line-height: 2em;}
+div.action_section dt {font-weight:500;font-size:1.2em;color:#3a68bf;padding-bottom:5px;}
+div.action_section dd {margin-bottom:10px;}
+div.action_section dl {padding-left:2vw;}
+#volunteer .button {margin-right:10px;}
+
+/* Sponsor Section */
+.sponsor {padding:0vw 1vw;display:flex;background:#202020a8;border-top:1px solid #32343a;border-bottom:1px solid #32343a;align-items:center;}
+.sponsor h4 {font-weight:300;letter-spacing:4px;text-transform:uppercase;margin-top:15px;}
+.sponsor img {height:35px;padding:15px 20px;}
+.sponsor_segment {border-left: 1px dotted #32343a;padding-left:25px;}
+
+#footnote {display:block;border-top: 1px solid #ffffff14;padding:1vw 1vw;}
+#footer {background:#2d3442;margin-bottom:0px;padding:2vw 3vw 0vw 3vw;display:flex;}
+#footer > span {text-align:center;flex-basis:20%;margin-right:3vw;padding-top:10px;}
+#footer ul {flex-basis:25%;list-style:none;line-height:2em;font-size:1.1em;margin-top:0;}
+#footer ul a:hover {color:#9bafd4;}
+
+/* Responsive */
+@media only screen and (max-width:968px) {
+p, #footnote {line-height:1.75em;}
+.grouped_box .photo {width:100%;}
+.grouped_box {width:50%;float:left;max-height:initial;flex-direction:column;}
+.grouped_box.reverse_column {flex-direction:column;}
+.grouped_box div:last-child {padding: 2vw 4vw;}
+#menu ul, #menu h2 {float:initial;text-align:center;padding:0;}
+#menu li {padding: 5px 5px 5px 0px;}
+#info_box h1 {background:#19191b;padding:30px 10px;line-height:1em;}
+}
+
+@media only screen and (max-width:568px) {
+.grouped_box {width:100%;float:initial;}
+.grouped_box div:last-child{width:90%;margin-bottom:5vw;}
+div.action_section {flex-direction:column;}
+div.action_section div {width:90vw;border:initial;border-bottom: 1px dotted #32343a;}
+div#footer {flex-direction:column;}
+div.action_section div {padding:2vw;}
+}
