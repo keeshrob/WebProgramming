@@ -1,0 +1,41 @@
+h {
+	text-align: center;
+}
+
+.main {
+	display: flex;
+	width: 70%;
+	margin: auto;
+	
+}
+
+p1 {
+	align: center;
+	border-style: dashed;
+	flex-basis: 1;
+	padding: 2em;
+	margin: 2em;
+	border-color: red;
+}
+
+p2 {
+	border-style: dashed;
+	flex-basis: 2;
+	padding: 2em;
+	margin: 2em;
+	border-color: red;
+}
+
+p3 {
+	clear: both;
+}
+img {
+	float: right;
+	width: 200px;
+}
+
+.fixed{
+	position: fixed;
+	bottom: 5px;
+	width: 100%
+}

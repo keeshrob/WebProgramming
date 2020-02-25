@@ -1,0 +1,49 @@
+.title {
+	background: #A8F0F0;
+	text-align: right;
+}
+
+#one {
+	font: 14pt;
+}
+
+.whole {
+	border: 10px white solid;
+	background: white;
+
+h2 {
+	text-decoration-style: dashed;
+	text-decoration-line: underline;
+	text-decoration-color: #C2E9E9;
+}
+
+#entry {
+	border: 4px #C2E9E9 solid;
+	background: #E8FBFB;
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+}
+
+#out {
+	border: 4px #C2E9E9 solid;
+	background: #E8FBFB;
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+	
+}
+
+body {
+	background-image: url('bkgrnd.jpg');
+}
+
+p4{
+	float: right;
+	width: auto;
+	height: auto;
+}
+
+p5{
+	float: right;
+	width: auto;
+	height: auto;
+}
